@@ -1,52 +1,69 @@
-For Ubuntu/Debian (apt)
+** For Ubuntu/Debian (apt) ..
 
 $ sudo apt-get update
 $ sudo apt-get install git
 
-verification
+* verification .
 
 $ git --version
 
-Config Git UserName & Email
+* Config Git UserName & Email .
 
 $ git config --global user.name "foo"
 $ git config --global user.email "foo@foo.com"
 
-For Example
+* For Example.
 
 $ git config --global user.name "gk"
 $ git config --global user.email "gk123@gmail.com"
 
 
-For Fedora (dnf/yum)
+** For Fedora (dnf/yum) .
 
 $ sudo dnf install git
 Or
 $ sudo yum install git
 
-verification
+* verification.
 
 $ git --version
 
-Config Git user & email
+* Config Git user & email .
 
 $ git config --global user.name "foo"
 $ git config --global user.email "foo@foo.com"
 
-For example
+* For example.
 
 $ git config --global user.name "gk"
 $ git config --global user.email "gk123@gmail.com"
 
-for older versions of Fedora
+** for older versions of Fedora...
 
 $ sudo dnf install curl-devel expat-devel gettext-devel openssl-devel perl-devel zlib-devel asciidoc xmlto docbook2X
 
 
-Install git in Amazon EC2 instance
+***Install git in Amazon EC2 instance...
 
 $ sudo yum install git
 
-Verification
+* Verification
 
-git version
+$ git version
+
+
+** starting with Git....
+
+* Create a directory 
+
+$ mkdir mygit
+
+* Get into the created directory
+
+$ cd mygit/
+
+* Now, initialize git local repository
+
+$ git init
+
+
