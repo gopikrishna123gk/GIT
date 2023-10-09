@@ -1,57 +1,282 @@
-Getting & Creating Projects
+1) Git Configuration 
 
 
-git init	Initialize a local Git repository
-git clone ssh://git@github.com/[username]/[repository-name].git	Create a local copy of a remote repository
+** Git config ..
+* Set the name .
+$ git config --global user.name "User name"
+ex:- $ git config --global user.name "gk"
 
+* Set the email .
+$ git config --global user.email "himanshudubey481@gmail.com"
+$ git config --global user.email "gk@gmail.com"
 
-Basic Snapshotting
+* Set the default editor .
+$ git config --global core.editor Vim
 
-git status	Check status
-git add [file-name.txt]	Add a file to the staging area
-git add -A	Add all new and changed files to the staging area
-git commit -m "[commit message]"	Commit changes
-git rm -r [file-name.txt]	Remove a file (or folder)
+ * Check the setting .
+$ git config -list
 
-
-Branching & Merging
-
-
-git branch	List branches (the asterisk denotes the current branch)
-git branch -a	List all branches (local and remote)
-git branch [branch name]	Create a new branch
-git branch -d [branch name]	Delete a branch
-git push origin --delete [branch name]	Delete a remote branch
-git checkout -b [branch name]	Create a new branch and switch to it
-git checkout -b [branch name] origin/[branch name]	Clone a remote branch and switch to it
-git branch -m [old branch name] [new branch name]	Rename a local branch
-git checkout [branch name]	Switch to a branch
-git checkout -	Switch to the branch last checked out
-git checkout -- [file-name.txt]	Discard changes to a file
-git merge [branch name]	Merge a branch into the active branch
-git merge [source branch] [target branch]	Merge a branch into a target branch
-git stash	Stash changes in a dirty working directory
-git stash clear	Remove all stashed entries
-
-
-Sharing & Updating Projects
+* Git alias .
+Set up an alias for each command:
+$ git config --global alias.co checkout
+$ git config --global alias.br branch
+$ git config --global alias.ci commit
+$ git config --global alias.st status
 
 
 
-git push origin [branch name]	Push a branch to your remote repository
-git push -u origin [branch name]	Push changes to remote repository (and remember the branch)
-git push	Push changes to remote repository (remembered branch)
-git push origin --delete [branch name]	Delete a remote branch
-git pull	Update local repository to the newest commit
-git pull origin [branch name]	Pull changes from remote repository
-git remote add origin ssh://git@github.com/[username]/[repository-name].git	Add a remote repository
-git remote set-url origin ssh://git@github.com/[username]/[repository-name].git	Set a repository's origin branch to SSH
-
-Inspection & Comparison
+2) Starting a project 
 
 
 
-git log	View changes
-git log --summary	View changes (detailed)
-git log --oneline	View changes (briefly)
-git diff [source branch] [target branch]	Preview changes before merging
+* Git init .
+Create a local repository
+$ git init
+
+* Git clone .
+Make a local copy of the server repository.
+$ git clone
+
+
+ 3) Local changes 
+
+* Git add .
+Add a file to staging (Index) area
+$ git add Filename
+ex:- $ git add gk
+
+* Add all files of a repo to staging (Index) area .
+$ git add*
+
+* Git commit .
+Record or snapshots the file permanently in the version history with a message.
+$ git commit -m " Commit Message"
+
+
+ 4) Track changes 
+
+* Git diff .
+Track the changes that have not been staged
+ $ git diff
+
+# Track the changes that have staged but not committed
+$ git diff --staged
+
+# Track the changes after committing a file:
+$ git diff HEAD
+
+# Track the changes between two commits
+shows the diff between two branches 
+$ git diff Git Diff Branches
+$ git diff < branch 2>
+for example
+$ git diff <branch1> <branch2>
+
+* Git status .
+Display the state of the working directory and the staging area
+$ git status
+
+# Git show Shows objects
+$ git show
+
+5) Commit History 
+
+* Git log
+Display the most recent commits and the status of the head
+$ git log
+
+# Display the output as one commit per line
+$ git log -oneline
+
+# Displays the files that have been modified
+$ git log -stat
+
+# Display the modified files with location
+$ git log -p
+
+* Git blame .
+Display the modification on each line of a file:
+$ git blame <file name>
+ for example 
+$ git blame gk
+
+
+6) Ignoring files 
+$.gitignore
+Specify intentionally untracked files that Git should ignore. Create .gitignore
+$ touch .gitignore List the ignored files
+$ git ls-files -i --exclude-standard
+
+
+
+7) Branching 
+
+* Git branch Create branch .
+
+$ git branch List Branch:
+$ git branch --list Delete a Branch:
+$ git branch -d Delete a remote Branch:
+$ git push origin -delete Rename Branch:
+$ git branch -m
+
+* Git checkout .
+Switch between branches in a repository.
+Switch to a particular branch:
+$ git checkout
+
+* Create a new branch and switch to it .
+$ git checkout -b Checkout a Remote branch:
+$ git checkout
+
+* Git stash .
+Switch branches without committing the current branch. Stash current work:
+$ git stash
+
+* Saving stashes with a message .
+$ git stash save ""
+
+* Check the stored stashes .
+$ git stash list
+
+* Re-apply the changes that you just stashed .
+$ git stash apply
+
+* Track the stashes and their changes .
+$ git stash show
+
+* Re-apply the previous commits .
+$ git stash pop
+
+* Delete a most recent stash from the queue .
+$ git stash drop
+
+* Delete all the available stashes at once .
+$ git stash clear
+
+* Stash work on a separate branch .
+$ git stash branch
+
+* Git cherry pic .
+
+## Cherry picking is the act of picking a commit from a branchand applying it to another. git cherry-pick can be useful for 
+undoing changes. For example, say a commit is accidently made to the wrong branch. You can switch to the correct branch and 
+cherry-pick the commit to where it should belong.
+
+# Apply the changes introduced by some existing commit
+$ git cherry-pick
+
+
+8) Merging 
+
+* Git merge .
+Merge the branches
+$ git merge
+
+* Merge the specified commit to currently active branch .
+$ git merge
+
+* Git rebase .
+Apply a sequence of commits from distinct branches into a final commit.
+$ git rebase
+
+* Continue the rebasing process
+$ git rebase -continue Abort the rebasing process
+$ git rebase --skip
+
+* Git interactive rebase .
+Allow various operations like edit, rewrite, reorder, and more on existing commits.
+$ git rebase -i
+
+
+9) Remote
+
+* Git remote .
+Check the configuration of the remote server
+$ git remote -v
+
+* Add a remote for the repository .
+$ git remote add Fetch the data from the remote server
+$ git fetch
+
+* Remove a remote connection from the repository
+$ git remote rm
+
+* Rename remote server .
+$ git remote rename
+
+* Show additional information about a particular remote
+$ git remote show
+
+* Change remote .
+$ git remote set-url
+
+* Git origin master .
+Push data to the remote server
+$ git push origin master Pull data from remote server
+$ git pull origin master
+
+
+10) Pushing Updates
+
+
+* Git push .
+Transfer the commits from your local repository to a remote server. Push data to the remote server
+$ git push origin master Force push data
+$ git push -f
+
+* Delete a remote branch by push command .
+$ git push origin -delete edited
+
+
+11) Pulling updates 
+
+* Git pull .
+Pull the data from the server
+$ git pull origin master
+
+* Pull a remote branch .
+$ git pull
+
+* Git fetch .
+Download branches and tags from one or more repositories. Fetch the remote repository
+$ git fetch< repository Url> Fetch a specific branch
+$ git fetch
+
+* Fetch all the branches simultaneously .
+$ git fetch -all
+
+* Synchronize the local repository
+$ git fetch origin
+
+
+
+12) Undo changes
+
+
+* Git revert .
+Undo the changes
+$ git revert
+
+* Revert a particular commit .
+$ git revert
+
+* Git reset .
+Reset the changes
+$ git reset -hard
+$ git reset -soft
+$ git reset --mixed
+
+
+
+13) Removing files
+
+
+
+* Git rm .
+Remove the files from the working tree and from the index
+$ git rm <file Name>
+# for example $ git rm gk, here gk means branch name
+
+* Remove files from the Git But keep the files in your local repository .
+$ git rm --cached
+
