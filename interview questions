@@ -1,12 +1,14 @@
 1) What are Git and GitHub?
 
-*) Git is an open-source and free distributed version control system developed to handle projects of all sizes quickly and efficiently.
-*) GitHub uses Git to provide Internet hosting for version control and software development. It offers the functionality of distributed version control 
- and source code management, which is found in Git .
+*) Git is an open-source and free distributed version control system developed to handle projects of all sizes quickly and 
+  efficiently.
+*) GitHub uses Git to provide Internet hosting for version control and software development. It offers the functionality of 
+  distributed version control and source code management, which is found in Git
 
  2) What is a Git repository? Name some popular Git hosting services?
 
- *) Repositories contain a batch of files that are different versions of a project. These files are imported from the repositories into
+ *) Repositories contain a batch of files that are different versions of a project. These files are imported from the
+    repositories into
  the local servers of users for further modifications and updates in the content
 *)  A few popular Git hosting services are
    - GitHub
@@ -19,9 +21,11 @@
 *) A version control system (VCS) is a software tool used to create different project versions and store them in a repository
 All modifications to the code are recorded and tracked by the VCS
 ## Types of version control systems...
-*) Local version control systems:- have a database that maintains all the file changes on disk under, revision control in a special format
+*) Local version control systems:- have a database that maintains all the file changes on disk under, revision control in a
+  special format
 *) Centralized version control systems:- contain one repository, and each user gets their own working copy
-*) Distributed version control systems:- contain multiple repositories, each accessible to separate users with their own working copy
+*) Distributed version control systems:- contain multiple repositories, each accessible to separate users with their own
+  working copy
 
 4)  What are the main differences between Git and SVN?
 
@@ -33,8 +37,10 @@ Global revision number                                   	Not available	        
 Content	Cryptographic                                     SHA-1 Hash	                                         No hashed content
 ## Here we list some of the most important differences between Git and SVN
 *) When it comes to handling large files, Git is not preferred but SVN can handle multiple projects in the same repository
-*) Git does not have ‘commits’ across multiple branches but SVN lets you create the folders on any location in the repository layout
-*) You cannot commit changes in Git but SVN lets you create a tag as a branch and you can create multiple revisions under a root tag
+*) Git does not have ‘commits’ across multiple branches but SVN lets you create the folders on any location in the repository 
+ layout
+*) You cannot commit changes in Git but SVN lets you create a tag as a branch and you can create multiple revisions under a
+  root tag
 
 5)  What are the advantages of using GIT?
 
@@ -49,21 +55,23 @@ Content	Cryptographic                                     SHA-1 Hash	           
 
 6) What is the meaning of “Index” or “Staging Area” in GIT?
 
-*) When we are making the commits, we can make changes to it, format it and review it in the intermediate area known as ‘Staging Area’ or ‘Index’
+*) When we are making the commits, we can make changes to it, format it and review it in the intermediate area known as 
+‘Staging Area’ or ‘Index’
 
 7) What is tagging in Git?
 
-*) Tagging allows developers to mark all the important checkpoints through the course of their projects’ progress. Instead of commit IDs 
-tag names can be used while commits are checked out and pushed to a remote repo.
+*) Tagging allows developers to mark all the important checkpoints through the course of their projects’ progress. Instead of 
+commit IDs tag names can be used while commits are checked out and pushed to a remote repo.
 
 8) What is forking in Git?
 
-A repository copy is called a fork. So, forking allows one to experiment with changes without worrying about the original project.
-This process is ideal for proposing changes to someone else’s projects.
+A repository copy is called a fork. So, forking allows one to experiment with changes without worrying about the original 
+project This process is ideal for proposing changes to someone else’s projects.
 
 9) What is the use of a Git clone?
 
-*) The Git clone command lets us copy the existing Git repository. If we want to get a copy of he central repository then the best way to do it is using ‘cloning’.
+*) The Git clone command lets us copy the existing Git repository. If we want to get a copy of he central repository then 
+   the best way to do it is using ‘cloning’.
 
 10) What is cherry-pick in Git?
 
@@ -72,8 +80,8 @@ Cherry-picking is the process of picking a commit from one branch and applying i
 
 11) What is origin in Git?
 
-Origin refers to the remote repository that a project was originally cloned from and is used instead of the original repository’s URL.
- This allows for easier referencing.
+Origin refers to the remote repository that a project was originally cloned from and is used instead of the original repository’s
+url. This allows for easier referencing.
 
  12) What is the difference between git fetch and git pull?
 
@@ -89,8 +97,10 @@ Origin refers to the remote repository that a project was originally cloned from
 
   14) What does git rebase do?
 
-  *) Rebasing is the reapplying of commits on top of another base trip. A sequence of commits is applied from distinct branches into the final commit, it is
-   a linear process of merging and an alternative to the git merge command. Rebasing makes it seem like one has created a branch from a different commit. 
+  *) Rebasing is the reapplying of commits on top of another base trip. A sequence of commits is applied from distinct branches
+    into the final commit, it is a linear process of merging and an alternative to the git merge command. Rebasing makes it 
+seem like one has created a branch from a different commit. 
+
 
    15) What is the difference between git rebase and git merge?
 
@@ -98,8 +108,8 @@ Origin refers to the remote repository that a project was originally cloned from
 
    16) What is revert in Git?
 
-   *) The git revert command is a forward-moving undo operation. It is a safe way to undo changes as it will create a new commit  that inverses the
-   changes instead of deleting or orphaning commits in the commit history.
+   *) The git revert command is a forward-moving undo operation. It is a safe way to undo changes as it will create a new commit 
+    we want to keep all changes instead of deleting or orphaning commits in the commit history.
 
    17) What is the difference between resetting and reverting?
 
@@ -113,29 +123,31 @@ Origin refers to the remote repository that a project was originally cloned from
 
     19) What is GIT stash?
 
-    *) The Git stash will take the working directory in the current state and index it to put on the stack at a later stage so that what we get 
-    is a clean working directory
-    *) This means that if we are in the middle of some task and need to get a clean working directory and simultaneously we want to keep all
-    our current edits, then we can use the Git stash
+    *) The Git stash will take the working directory in the current state and index it to put on the stack at a later stage 
+      so that what we get is a clean working directory
+    *) This means that if we are in the middle of some task and need to get a clean working directory and simultaneously
+       we want to keep all our current edits, then we can use the Git stash
 
     20) How are fork, branch, and clone different from each other?
 
     *) Forking creates a copy of the original repository, and it remains in the GitHub account.
     *) cloning, the repository is copied to the local machine using Git
-    *) Forking is used to propose changes to the repository owners. In cloning, the changes are directly pushed to the original repository,
-    provided the user has write access. A branch occurs within a repository and is a way to  keep developing and modifying the software 
-    without affecting the main project.
+    *) Forking is used to propose changes to the repository owners. In cloning, the changes are directly pushed to the original
+    repository,  provided the user has write access. A branch occurs within a repository and is a way to  keep developing and 
+     modifying the software without affecting the main project.
 
     21)  What is the difference between git reflog and log?
 
-    *) The git log is a public record of the commit history for a branch. Reflog, on the other hand, is a private one of the repository’s local commits.
-    *) Unlike reflog, the git log is a part of the Git repository and is replicated after a push, fetch, or pull. A developer cannot access a local
-    repository’s reflog without having access to the computer where it is located.
+    *) The git log is a public record of the commit history for a branch. Reflog, on the other hand, is a private one of the
+       repository’s local commits.
+    *) Unlike reflog, the git log is a part of the Git repository and is replicated after a push, fetch, or pull. A developer 
+       cannot access a local repository’s reflog without having access to the computer where it is located.
 
     22) What is GIT stash drop?
 
-    *) When we are finished with working on the stashed item or want to remove the list, we can use the Git stash drop. This will ensure that the
-    item that is last added by default or any particular item can be removed from the argument.
+    *) When we are finished with working on the stashed item or want to remove the list, we can use the Git stash drop. 
+       This will ensure that the item that is last added by default or any particular item can be removed 
+       from the argument.
 
 
     23) How to identify if a certain branch has been merged into master?
@@ -147,17 +159,20 @@ Origin refers to the remote repository that a project was originally cloned from
 
     24) Why do we need branching in GIT?
 
-    *) With the help of branching, we can have our own branch and we can also jump between various branches We can go to our previous
-    work, at the same time keeping our recent work intact
+    *) With the help of branching, we can have our own branch and we can also jump between various branches
+      We can go to our previous work, at the same time keeping our recent work intact
+   
 
     25)  What is HEAD in Git, and how many HEADs can be created in a repository?
 
-    *) The reference to a commit object is called the HEAD. Every repository has a ‘Master’ which is the default head. There can be multiple heads in a repository.
+    *) The reference to a commit object is called the HEAD. Every repository has a ‘Master’ which is the default head. 
+       There can be multiple heads in a repository.
 
     26) What is the regular way for branching in GIT?
 
-    *) The best way to create a branch in GIT is to have one ‘main’ branch and then create another branch for implementing the changes the changes that we want to make
-    This is extremely useful when there are a large number of developers working on a single project.
+    *) The best way to create a branch in GIT is to have one ‘main’ branch and then create another branch for
+       implementing the changes the changes that we want to make This is extremely useful when there are
+       a large number of developers working on a single project.
 
     27) State a way to create a new branch in Git?
 
@@ -171,7 +186,8 @@ Origin refers to the remote repository that a project was originally cloned from
 
     29) How to resolve a conflict in Git?
 
-    *) If we want to resolve a conflict in Git, then we need to edit the files for fixing the conflicting changes and then we can run
+    *) If we want to resolve a conflict in Git, then we need to edit the files for fixing the conflicting changes and then 
+       we can run
     “git add” to add the resolved files and after that we can run the ‘git commit’ for committing the repaired merge.
 
     30) What is a commit message?
@@ -227,37 +243,197 @@ Origin refers to the remote repository that a project was originally cloned from
         *) Step 2: After editing the file, we can use the git add a command to stage the new merged content.
         *) Step 3: The final step is to create a new commit with the help of the git commit command.
         *)Step 4: Git will create a new merge commit to finalize the merge.
-        
-*)  Types of Git Merge Conflicts 
+        *)  Types of Git Merge Conflicts 
 
     *)  Starting the Merge Process 
-            If there are changes in the working directory’s stage area for the current project, merging won’t start. 
-             In this case, conflicts happen due to pending changes that need to be stabilized using different Git commands.
+           If there are changes in the working directory’s stage area for the current project, merging won’t start. 
+            In this case, conflicts happen due to pending changes that need to be stabilized using different Git commands.
     *) During the Merge Process
-           The failure during the merge process indicates that there is a conflict between the local branch and the branch being merged.
-             In this case, Git resolves as much as possible, but there are things that have to be resolved manually in the conflicted files.
-              We will now go over resolving merge conflicts in Git.
+          The failure during the merge process indicates that there is a conflict between the local branch and the branch 
+          being merged.
+          In this case, Git resolves as much as possible, but there are things that have to be resolved manually in 
+          the conflicted files, We will now go over resolving merge conflicts in Git.
  
 
   34) How is git instaweb used?
 
-    *)  git instaweb’ is used to automatically direct a web browser and run a webserver with an interface into your local repository.
-      $ git instaweb [--local] [--httpd=<httpd>] [--port=<port>]
-       [--browser=<browser>]
-      $ git instaweb [--start] [--stop] [--restart]
+    *)  git instaweb’ is used to automatically direct a web browser and run a webserver with an interface into your 
+        local repository.
+           $ git instaweb [--local] [--httpd=<httpd>] [--port=<port>]
+             [--browser=<browser>]
+           $ git instaweb [--start] [--stop] [--restart] 
+
+35) Why is it better to create an additional commit than amending an existing one?
+
+ *) The correct activity will devstate the recently saved commit. If you only change the commit message, it won't create a
+    problem. However, if you modify the contents, there are more chances of excluding something important.
+ *) if you abuse "git commit- amends," it can cause a small commit to increase and acquire inappropriate changes.
+
+36) How would you return a commit that has just been pushed and made open?
+
+  *) Use the Git log or reflog command to find the ID of the commit you want to revert.
+  *) Enter the Git revert command, including the commit ID you want to work on.
+  *) Provide an informative Git commit message to explain why you needed to perform the Git revert.
+
+37) How will you know if a branch has just been combined into a master in Git?
+
+  *) in order to verify which branches are merged into master you should use these commands
+  *)  $ git branch <flag[-r/-a/none]> --merged master -- list of all branches merged into master.
+  *)  $ git branch <flag[-r/-a/none]> --merged master | wc -l  --count number of all branches merged into master.
+  *) Flags Are:
+            -a flag - (all) showing remote and local branches
+            -r flag - (remote) showing remote branches only
+            -<emptyFlag> - showing local branches only
+  *) for ex:- $ git branch -r --merged master -- will show you all remote repositories merged into master.
+
+38) How would you find a commit that broke something after a merge operation?
+
+ *) To track down a broken commit, git gives us a very handy tool called git bisect .Git bisect does
+    a binary search to find the broken commit.
+ *) $ git bisect start               -- starts the bisecting session
+ *) $ git bisect bad                 -- marks the current revision as bad
+ *) $ git bisect good revision       -- marks the last known good revision
+ *) After this, git will automatically checkout a revision halfway between the known “good” and “bad” versions,
+   you can now rerun your specs and mark the commit as “good” or “bad” accordingly.
+        $ git bisect good # or git bisec bad
+ *) This process continues until you get to the commit that introduced the bug.
+
+39) What would you do to squash the last N commits into a single commit?
+
+ *) Squashing combines multiple commits into a single commit based on your commit history. With the help of squashing
+    you can clean your branch history and can maintain an organized commit timeline.  It is used before pulling
+    requests or merging feature branches.
+ *) By using the git squash-merge command you can combine multiple commits into a single commit, After using the
+     git squash command your repository will be clean and organized manner. 
+          $ git merge --squash feature-branch
+          $ git merge --squash (working branch name) 
+          $ git commit
+          $ git squash N
+
+
+40) How would you remove a file from Git without removing it from your file system?
+
+ *) If developers want to remove a particular file Git repository rather than deleting it from the local File system,
+     follow the below-given instructions
+       *) Go to the particular repository.
+       *) Display the current repository list of content.
+       *) Select the particular file.
+       *) Use the “git rm –cached <file-name>” command.
+       *) Ensure the deleting process by checking the status of the Git repository.
+              $ git rm –cached <file-name>
+         ex:- $ git rm --cached file3.txt
+
+
+41) When would you choose "git rebase" instead of "git merge"?
+
+  *) If you would prefer a clean, linear history free of unnecessary merge commits,you should reach for
+     git rebase instead of git merge when integrating changes from another branch.
+
+42) How can you configure a Git repository to run code sanity checking tools before making commits? 
+    How will it prevent them if the test fails?
+
+   *) A sanity or smoke test determines whether it is possible and reasonable to continue testing. This can be done
+      with a simple script related to the pre-commit hook of the repository.
+   *) This can be done with a simple script related to the pre-commit hook of the repository. The pre-commit
+      hook is triggered right before a commit is made, even before you are required to enter a commit message
+      In this script, one can run other tools, such as linters and perform sanity checks on the changes being
+      committed into the repository.
+   *) #!/bin/sh
+     files=$(git diff –cached –name-only –diff-filter=ACM | grep ‘.go$’)
+     if [ -z files ]; then
+     exit 0
+     fi
+     unfmtd=$(gofmt -l $files)
+     if [ -z unfmtd ]; then
+     exit 0
+     fi
+     echo “Some .go files are not fmt’d”
+     exit 1 
       
-     
-    
+ 43) One of your team members accidentally deleted a branch and pushed the changes to the central git repository
+     How would you recover this branch, given that there are no other git repositories, and no other teammates
+     have a local copy?
 
-    
+     *) We can recover this by checking out the latest commit of this branch in the reflog and then
+       checking it out as a new branch
+         $ git reflog
 
 
-    
+44) How would you copy a commit made in one branch to another branch? 
+
+ *) Cherry picking is the act of picking a commit from a branch and applying it to another
+    git cherry-pick can be useful for undoing changes.
+ *) How does git cherry pick works?
+    *) While on the wrong branch (the one that has the commit), do git log and copy the commit hash
+           $ git log
+    *) Checkout to the correct branch which you want to apply the commit
+           $ git checkout master
+    *) Now apply the commit to the new branch
+          $ git cherry-pick <commit-hash>
 
 
-  
-  
- 
+45) How would you set up a script to run every time a repository gets new commits through push?
 
+   *) To configure a script to run every time a repository receives new commits through push one needs to
+      define either a pre-receive, update, or a post-receive hook depending on when exactly the script
+      needs to be triggered. Pre-receive hook in the destination repository is invoked when
+      commits are pushed to it.
+   *) #!/bin/bash
+     echo Running $BASH_SOURCE
+     set | egrep GIT
+     echo PWD is $PWD
+
+46) Tell me the difference between HEAD, working tree and index, in Git?
+
+  *) The working tree/working directory/workspace is the directory tree of (source) files that you see and edit
+  *) The index/staging area is a single, large, binary file in <baseOfRepo>/.git/index, which lists, all files in the current
+      branch, their sha1 checksums, time stamps and the file name , it is not another directory with a copy of files in it.
+  *) HEAD is a reference to the last commit in the currently checked-out branch.
+
+50) How to revert previous commit in git?
+
+  *) Say you have this, where C is your HEAD and (F) is the state of your files.
+  *)  To nuke changes in the commit
+       $ git reset --hard HEAD~1
+  *) Now B is the HEAD. Because you used --hard, your files are reset to their state at commit B.
+  *) To undo the commit but keep your changes
+       $ git reset HEAD~1
+  *) Now we tell Git to move the HEAD pointer back one commit (B) and leave the files as they are and
+      $ git status shows the changes you had checked into C
+  *) To undo your commit but leave your files and your index
+       $ git reset --soft HEAD~1
+  *) When you do  $ git status, you'll see that the same files are in the index as before.
+
+51) What's the difference between a "pull request" and a "branch"?
+
+ *) A branch is just a separate version of the code
+ *) A pull request is when someone take the repository, makes their own branch, does some changes
+    then tries to merge that branch in (put their changes in the other person's code repository).
+
+52) Branching Strategies Options
+
+  *) Release Branching Strategy
+     ## With release branching, all the code that is meant to be deployed together lives on the same branch This makes it easy
+        to do isolated testing of new behavior, separate from the rest of the codebase or other in-progress work
+     for example:- When working at a custom software consulting company, release branching can also be useful because it
+                   clearly defines what’s live on Production. This approach helps clients understand when it’s ‘go time'
+                   for new features because deployments are pre-planned and concrete.
+
+   *) Feature Branching Strategy
+      ## Feature branching is similar to release branching, except instead of organizing the branches arounda release of
+         several features, you create one branch for each individual feature. 
+     for example:- “As a user, I can log in to the website with my username and password.” Depending on team
+                    structure and workflow, that might encompass several tickets or tasks on your project board
+
+   *) Story (or) Task Branching
+       ## Though feature branching is closer to ‘continuous’ than release branching, it still can lead to similar problems
+          with long-running branches, since a feature might take a long time to code to completion. That also means
+          it has similar potential for merge conflicts
+
+   *) Trunk-Based Development
+
+      ## Finally, the strategy that is truest to the core purpose of CI/CD: trunk-based development. This is honestly the
+         scariest thing I’ve ever written: with trunk-based development, everyone commits and pushes to the main branch
+         (the core codebase! without any side branches!), and those commits are deployed automatically
 
 
