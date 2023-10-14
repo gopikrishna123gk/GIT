@@ -280,3 +280,36 @@ $ git rm <file Name>
 * Remove files from the Git But keep the files in your local repository .
 $ git rm --cached
 
+*) Deleting a GIT local branch
+$ git branch -d "branch name"
+# ex:- $ git branch -d gk
+
+*) Deleting a Git remote branch
+$ git push origin -d "branch name"
+# ex:- git push origin -d gk
+if you are on a version of Git older than 1.7.0
+$ git push <remote_name> :<branch_name> 
+
+*) Deleting a branch with merged changes
+   When we are deleting a branch having merged changes, we delete it by using small "d" like below
+   $ git branch -d <BranchName>
+   # ex:- $ git branch -d gk
+
+*) Deleting a git branch with unmerged changes
+   When we are deleting a branch having unmerged changes, then we will need to use the capital "D" to force the deletion
+   like below
+   $ git branch -D <branchName>
+   # ex:- $ git branch -D gk
+*) To confirm if the remote tracking branch was delete or not, you can run the following command
+   $ git branch –remotes
+   $ git branch –r
+
+*) to delete a local branch in Git is
+   $ git branch -d  local_branch_name
+
+*) Deleting a Git remote branch
+  $ git push origin -d "branch name"
+  $ git push <remote_name> --delete <branch_name>
+  
+
+
